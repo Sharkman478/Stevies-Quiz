@@ -1,11 +1,10 @@
 var timerEl = document.getElementById('timer');
-var timeValue = localStorage.getItem('timeValue');
-console.log(timeValue)
+var timeLeft = localStorage.getItem('timeLeft');
 function startTimer() {
     var timerInterval = setInterval(function() {
-        timeValue--;
-        timerEl.textContent = timeValue + ': Timer';
-        if (timeValue == 0) {
+        timeLeft--;
+        timerEl.textContent = timeLeft + ': Timer';
+        if (timeLeft == 0) {
             timerEl.textContent = '';
             clearInterval(timerInterval);
         }
