@@ -3,7 +3,7 @@ var incorrectEl = document.getElementById('incorrect');
 var incorrect2El = document.getElementById('incorrect2');
 var incorrect3El = document.getElementById('incorrect3');
 var correctEl = document.getElementById('correct');
-var timeLeft = 60;
+var timeLeft = 100;
 
 function startTimer() {
     var timerInterval = setInterval(function() {
@@ -11,7 +11,7 @@ function startTimer() {
         localStorage.setItem('timeLeft', timeLeft);
         timerEl.textContent = timeLeft + ': Timer';
         if (timeLeft == 0) {
-            timerEl.textContent = '';
+            window.location.href = "./final-page.html";
             clearInterval(timerInterval);
         }
     }, 1000);
