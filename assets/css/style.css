@@ -21,7 +21,27 @@ main{
     left: 47.5%;
     margin-top: .5%;
 }
-#button:hover{
+#button:hover, #correct:hover, #incorrect:hover, #incorrect2:hover, #incorrect3:hover{
     cursor: pointer;
     background-color: rgb(0, 116, 81);
+}
+#correct, #incorrect, #incorrect2, #incorrect3{
+    background-color: rgb(2, 168, 127);
+    font-size: large;
+    left: 50%;
+    margin-top: .5%;
+}
+#initialsbutton{
+    background-color: rgb(2, 168, 127);
+    font-size: large;
+    left: 50%;
+    margin-top: .5%;
+}
+#initialsbutton:hover{
+    cursor: pointer;
+    background-color: rgb(0, 116, 81);
+}
+#initials-input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
